@@ -1,4 +1,11 @@
+import proguard.gradle.ProGuardTask
+
 apply plugin: 'com.android.library'
+
+apply plugin: 'com.github.dcendents.android-maven' // 增加
+group='com.qinssen.easyui'
+//apply from: 'config.gradle'
+
 
 android {
     compileSdkVersion 29
@@ -22,8 +29,8 @@ android {
     }
 
     compileOptions {
-        sourceCompatibility 1.8
-        targetCompatibility 1.8
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
     }
 
 }
@@ -44,6 +51,5 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
 }
 
-//apply from: 'config.gradle'
-//apply from: 'maven.gradle'
+apply from: 'maven.gradle'
 
