@@ -2,7 +2,7 @@ apply plugin: 'com.android.library'
 
 android {
     compileSdkVersion 29
-
+    buildToolsVersion "28.0.3"
 
     defaultConfig {
         minSdkVersion 17
@@ -21,6 +21,18 @@ android {
         }
     }
 
+    compileOptions {
+        sourceCompatibility 1.8
+        targetCompatibility 1.8
+    }
+
+}
+
+repositories {
+    jcenter()
+    flatDir {
+        dirs 'libs'
+    }
 }
 
 dependencies {
@@ -31,3 +43,7 @@ dependencies {
     androidTestImplementation 'androidx.test:runner:1.2.0'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
 }
+
+//apply from: 'config.gradle'
+//apply from: 'maven.gradle'
+

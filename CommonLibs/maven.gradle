@@ -2,7 +2,6 @@
 // 发布需要的插件
 
 apply plugin: 'com.github.dcendents.android-maven'
-apply plugin: 'com.jfrog.bintray'
 // 项目引用的版本号，比如compile 'com.hsy.utils:utilslibrary:1.0.1'中的1.0.1就是这里配置的。
 version = "0.0.5"
 // 定义两个链接，下面会用到。

@@ -1,12 +1,13 @@
 // 1.maven-插件
 apply plugin: 'maven'
+
 apply plugin: 'com.github.dcendents.android-maven' // 增加
 // 2.maven-信息
 ext {// ext is a gradle closure allowing the declaration of global properties
     def currentTime = new Date().format("yyyyMMdd", TimeZone.getTimeZone("UTC"))
-    GITHUB_REPO_PATH = "F:\\codingHy\\Hyprojects\\NewHySDK"
+    GITHUB_REPO_PATH = "F:\\codingHy\\IntelliJIDEAProjects\\CommonUtils"
     PUBLISH_GROUP_ID = 'com.qinssen'
-    PUBLISH_ARTIFACT_ID = 'cordovahysdk'
+    PUBLISH_ARTIFACT_ID = 'commonutils'
     PUBLISH_VERSION = android.defaultConfig.versionName
 //    PUBLISH_VERSION = '0.2.1' + "_" + currentTime
 //    PUBLISH_VERSION = android.defaultConfig.versionName +"_"+android.defaultConfig.versionCode + "_" +currentTime
@@ -40,5 +41,6 @@ artifacts {
     archives androidSourcesJar
 
 }
+
 
 
