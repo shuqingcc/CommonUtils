@@ -1,0 +1,21 @@
+
+ext {
+    compileSdkVersion = 29
+    minSdkVersion = 17
+    targetSdkVersion = 19
+    versionCode = 24
+    versionName = "0.4.0"
+
+    //新版本描述信息
+    versionDesc = "1.优化下载监听回调执行在主线程中。2.解决强制更新状态下去安装，用户取消安装Dialog无法继续安装bug"
+    //项目的主页
+    siteUrl = "https://github.com/azhon/AppUpdate"
+    //gitHub仓库的地址
+    gitUrl = "https://github.com/azhon/AppUpdate.git"
+
+    GITHUB_REPO_PATH = "F:\\codingHy\\IntelliJIDEAProjects\\CommonUtils"
+    PUBLISH_GROUP_ID = 'com.qinssen'
+    PUBLISH_ARTIFACT_ID = 'common-util'
+}
+
+

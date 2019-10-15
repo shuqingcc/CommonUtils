@@ -1,11 +1,6 @@
-import proguard.gradle.ProGuardTask
-
 apply plugin: 'com.android.library'
-
-apply plugin: 'com.github.dcendents.android-maven' // 增加
-group='com.qinssen.easyui'
-//apply from: 'config.gradle'
-
+apply plugin: 'com.github.dcendents.android-maven'
+apply plugin: 'com.jfrog.bintray'
 
 android {
     compileSdkVersion 29
@@ -50,6 +45,6 @@ dependencies {
     androidTestImplementation 'androidx.test:runner:1.2.0'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
 }
+//apply from: 'maven.gradle'
 
-apply from: 'maven.gradle'
 
